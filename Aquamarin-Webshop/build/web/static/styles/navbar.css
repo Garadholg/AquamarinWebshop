@@ -1,0 +1,93 @@
+.mainNavColor {
+    background-color: #b0d4fd
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.navIcon {
+    font-size: 32px;
+    color: black;
+    vertical-align: bottom;
+}
+
+.navIconUser {
+    font-size: 36px;
+}
+
+.mainNavItem:hover,
+.mainNavItem:hover > i,
+.mainNavItem:hover > label#cartLabel,
+.mainNavItem:hover > label#loginLabel
+{
+    color: #666;
+    text-decoration: none;
+}
+
+.loginNavItem {
+    margin-left: 25px;
+}
+
+.userDropdownItem {
+    padding: 12px 6px 12px 25px;;
+}
+
+.mainNavItem:hover > #cartItemsNumber {
+    background-color: #8cb3f2;
+    text-decoration: none;
+}
+
+.catLabel {
+    color: #000;
+}
+
+.userDropdownMenu {
+    padding: 12px 0;
+}
+
+#cartItemsNumber {
+    padding: 3px 9px;
+    margin-bottom: 0;
+    margin-left: -15px;
+    margin-top: -5px;
+    vertical-align: top;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 10px;
+    color: white;
+    background-color: #1659c4;
+    position: absolute;
+}
+
+#cartLabel,
+#loginLabel {
+    color: black;
+    margin-bottom: 0.4rem;
+}
+
+#cartLabel {
+    margin-left: 12px;
+}
+
+#navbarContainer {
+    max-width: 80%;
+}
+
+#categoryNav > .nav-item:hover {
+    background-color: #265d94;
+}
+
+#categoryNav > .nav-item:hover > a {
+    color: white;
+}
+
+#logoutDropdownItem {
+    color: red;
+}
+
+#logoutDropdownItem:active {
+    color: white;
+}

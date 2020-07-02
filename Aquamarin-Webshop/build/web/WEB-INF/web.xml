@@ -12,6 +12,10 @@
         <servlet-name>RegistrationServlet</servlet-name>
         <servlet-class>controllers.RegistrationServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>controllers.ImageServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/pocetna</url-pattern>
@@ -24,6 +28,10 @@
     <servlet-mapping>
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/registracija</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImageServlet</servlet-name>
+        <url-pattern>/img/*</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

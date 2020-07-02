@@ -8,7 +8,7 @@
 <div class="productContainer">
     <div class="ratioHolder"></div>
     <div class="productElement">
-        <img class="productImage" src="${image}" alt="product-image">
+        <img class="productImage" src="img/${image}" alt="${productName}-image">
 
         <div class="d-flex justify-content-center align-items-center productText">
             <label class="brandLabel">${brand}</label> 

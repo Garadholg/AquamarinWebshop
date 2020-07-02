@@ -21,7 +21,6 @@ public class HomeServlet extends HttpServlet {
         List<Product> products = pdh.getHighlightedProducts();
         request.setAttribute("productList", products);
         
-        
         ServletContext sc = this.getServletContext();
         RequestDispatcher rd = sc.getRequestDispatcher("/WEB-INF/sites/home.jsp");
         rd.forward(request, response);

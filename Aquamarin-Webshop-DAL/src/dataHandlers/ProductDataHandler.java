@@ -26,7 +26,7 @@ public class ProductDataHandler {
 
     public List<Product> getProducts() {
         
-        List<Product> productList = new ArrayList<Product>();
+        List<Product> productList = new ArrayList<>();
         EntityManager em = null;
         
         try {

@@ -65,6 +65,10 @@
     margin: 0 40px;
 }
 
+.highlight-products-slider :focus {
+    outline-color: #b0d4fd;
+}
+        
 .slick-prev,
 .slick-next {
     width: initial;

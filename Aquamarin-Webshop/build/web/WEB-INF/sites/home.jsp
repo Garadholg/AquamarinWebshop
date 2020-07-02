@@ -69,10 +69,8 @@
                 </div>
 
                 <div class="highlight-products-slider">
-                    <custom:product image="https://www.temptalia.com/wp-content/uploads/2016/12/toofaced_papadontpeachgloss001-760x760.jpg" productID="1" brand="Too Faced" productName="Sweet Peach Lipgloss" />
-
                     <c:forEach var="product" items="${requestScope.productList}">
-                        <custom:product image="${product}" productID="1" brand="Too Faced" productName="Sweet Peach Lipgloss" />
+                        <custom:product image="${product.primaryImage.path}" productID="${product.id}" brand="${product.brand.name}" productName="${product.productName}" />
                     </c:forEach>
                 </div>
                 
@@ -80,4 +78,8 @@
 
         </div>
     </body>
+    
+    <style>
+        
+    </style>
 </html>

@@ -18,11 +18,11 @@ insert into Product values (5, 'Perlice - Crvene', 3.99, 'Description 6', 1)
 insert into Product values (6, 'Srce od stiropora', 49.99, 'Description 7', 1)
 go
 
-insert into ProductImage values (1, 'D:\Faks\Java web\Java web project\resources\images\products\campus_acrylic_black.jpg', 1)
-insert into ProductImage values (2, 'D:\Faks\Java web\Java web project\resources\images\products\fimo_clay_blue.jpg', 1)
-insert into ProductImage values (3, 'D:\Faks\Java web\Java web project\resources\images\products\marabu_decorlack_blue.jpg', 1)
-insert into ProductImage values (4, 'D:\Faks\Java web\Java web project\resources\images\products\marabu_glitter_green.jpg', 1)
-insert into ProductImage values (5, 'D:\Faks\Java web\Java web project\resources\images\products\marianne_flamingo_button.jpg', 1)
-insert into ProductImage values (6, 'D:\Faks\Java web\Java web project\resources\images\products\rayher_pearls_red.jpg', 1)
-insert into ProductImage values (7, 'D:\Faks\Java web\Java web project\resources\images\products\styrofoam_heart.jpg', 1)
+insert into ProductImage values (1, 'campus_acrylic_black.jpg', 1)
+insert into ProductImage values (2, 'fimo_clay_blue.jpg', 1)
+insert into ProductImage values (3, 'marabu_decorlack_blue.jpg', 1)
+insert into ProductImage values (4, 'marabu_glitter_green.jpg', 1)
+insert into ProductImage values (5, 'marianne_flamingo_button.jpg', 1)
+insert into ProductImage values (6, 'rayher_pearls_red.jpg', 1)
+insert into ProductImage values (7, 'styrofoam_heart.jpg', 1)
 go

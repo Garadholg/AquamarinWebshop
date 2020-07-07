@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="static/styles/slick.css" type="text/css">
         <link rel="stylesheet" href="static/styles/slick-theme.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/navbar.css" type="text/css">
         <link rel="stylesheet" href="static/styles/home.css" type="text/css">
         <link rel="stylesheet" href="static/styles/product.css" type="text/css">
 
@@ -79,7 +80,4 @@
         </div>
     </body>
     
-    <style>
-        
-    </style>
 </html>

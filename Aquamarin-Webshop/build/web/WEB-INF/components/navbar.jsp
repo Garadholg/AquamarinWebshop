@@ -3,19 +3,11 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8; ">
-
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="static/styles/navbar.css" type="text/css">
-
-    </head>
-
     <body>
         <nav class="navbar navbar-expand-lg navbar-light mainNavColor">
             <div id="navbarContainer" class="container">
-                <a class="navbar-brand" href="pocetna">
-                    <image class="logo" src="static/resources/images/logo2.png" alt="Aquamarin logo" /> 
+                <a class="navbar-brand" href="/Aquamarin-Webshop">
+                    <image class="logo" src="/Aquamarin-Webshop/static/resources/images/logo2.png" alt="Aquamarin logo" /> 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,7 +18,7 @@
                     <div class="nav-item ml-auto">
                         <a href="#" class="mainNavItem">
                             <i class="material-icons navIcon">shopping_cart</i>
-                            <label id="cartItemsNumber">0</label>
+                            <label id="cartItemsNumber">${sessionScope.cart.totalItems}</label>
                             <label id="cartLabel">Košarica</label>
                         </a>
                     </div>

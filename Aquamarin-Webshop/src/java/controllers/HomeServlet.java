@@ -9,6 +9,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import models.Cart;
 import models.Product;
 
 public class HomeServlet extends HttpServlet {
@@ -16,6 +18,14 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        HttpSession session = request.getSession();
+        Cart cart = (Cart)session.getAttribute("cart");
+        
+        if (cart == null) {
+            cart = new Cart();
+            session.setAttribute("cart", cart);
+        }
         
         ProductDataHandler pdh = ProductDataHandler.getInstance();
         List<Product> products = pdh.getHighlightedProducts();

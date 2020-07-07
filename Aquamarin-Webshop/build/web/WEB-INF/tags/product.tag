@@ -5,7 +5,7 @@
 <%@attribute name="productID" required="true"%>
 <%@attribute name="productName" required="true"%>
 
-<div class="productContainer">
+<div class="productContainer" data-id="${productID}">
     <div class="ratioHolder"></div>
     <div class="productElement">
         <img class="productImage" src="img/${image}" alt="${productName}-image">

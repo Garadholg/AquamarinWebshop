@@ -7,8 +7,7 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
     
-//    var productWidth = $('.productContainer').width() * 1.33;
-//    $('.productContainer').css({
-//        'height': productWidth + 'px'
-//    });
+    $('.productContainer').click(function(){
+        window.location.href = 'product/' + $(this).data('id');
+    });
 });

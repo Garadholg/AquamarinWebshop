@@ -68,4 +68,27 @@ public class ProductDataHandler {
         
         return productList;
     }
+    
+    public Product getProduct(String id) {
+        Product product = null;
+        EntityManager em = null;
+        String query = String.format("SELECT product FROM Product as product WHERE product.id = %s", id);
+        
+        try {
+            em = emf.createEntityManager();
+            
+            Query getProduct = em.createQuery(query, Product.class);
+            
+            product = (Product)getProduct.getSingleResult();
+            
+        } catch (Exception e) {
+            //logging
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
+        
+        return product;
+    }
 }

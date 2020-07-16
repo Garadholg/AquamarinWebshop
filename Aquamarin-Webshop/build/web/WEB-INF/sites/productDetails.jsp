@@ -21,13 +21,14 @@
         <jsp:include page="../components/navbar.jsp" />
         <div id="contentContainer" class="container">
             <div class="row imageContainer">
-                <img class="productImage col-6" src="/Aquamarin-Webshop/img/${product.primaryImage.path}" alt="${product.productName}-image"> 
+                <img class="productImage col-6" src="/Aquamarin-Webshop/static/resources/images/products/${product.primaryImage.path}" alt="${product.productName}-image"> 
                 <div class="col-6">
-                    <label class="productLabel">${requestScope.product.brand.name}</label>
+                    <label id="productBrandLabel" class="productLabel">${requestScope.product.brand.name}</label>
                     <label class="productLabel">${requestScope.product.productName}</label>
                     <label class="productLabel">${requestScope.product.price} kn</label>
                     <form action="/Aquamarin-Webshop/product/${requestScope.product.id}" id="addToCartForm" method="POST">
                         <input type="hidden" name="productID" value="${requestScope.product.id}" />
+                        <input type="hidden" name="productPrice" value="${requestScope.product.price}" />
                         <div id="buttonDecr" class="qtyAction qtyActionDisabled">
                             <i class="material-icons qtyIcon">remove</i>
                         </div>
@@ -37,8 +38,17 @@
                         </div>
                         <input type="submit" id="btnSubmit" value="Dodaj u košaricu" />
                     </form>
+                    <div class="addMessage hidden">
+                        <i class="material-icons closeIcon">clear</i>
+                        <div class="addMessageText">
+                            <label>Proizvod je uspješno dodan u košaricu!</label>
+                            <br />
+                            <a href="/Aquamarin-Webshop/cart">Pregledaj košaricu</a>
+                        </div>
+                        
+                    </div>
                     <div>
-                        <label>Opis proizvoda:</label>
+                        <label id="productDescriptionLabel">Opis proizvoda:</label>
                         <p>${requestScope.product.productDescription}</p>
                         <p id="respInfo"></p>
                     </div>

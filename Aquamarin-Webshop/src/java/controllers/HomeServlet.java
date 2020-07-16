@@ -19,14 +19,6 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        HttpSession session = request.getSession();
-        Cart cart = (Cart)session.getAttribute("cart");
-        
-        if (cart == null) {
-            cart = new Cart();
-            session.setAttribute("cart", cart);
-        }
-        
         ProductDataHandler pdh = ProductDataHandler.getInstance();
         List<Product> products = pdh.getHighlightedProducts();
         request.setAttribute("productList", products);

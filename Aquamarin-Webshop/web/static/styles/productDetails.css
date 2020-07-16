@@ -58,9 +58,51 @@ input[type=number] {
     margin-left: 6px;
 }
 
+.addMessage {
+    display: inline-block;
+    background-color: #6aeb8e;
+    padding: 10px 12px 10px 8px;
+    margin: 10px 0;
+}
+
+.addMessageText {
+    display: inline-block;
+}
+
+.addMessageText > label {
+    margin: 0;
+}
+
+.closeIcon {
+    margin: 18px 8px 0 0;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.closeIcon:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
 #contentContainer {
     max-width: 50%;
     margin-top: 50px;
+}
+
+#productBrandLabel {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#productDescriptionLabel {
+    font-weight: 500;
+}
+
+#addToCartForm {
+    margin: 25px 0;
 }
 
 #productQty {

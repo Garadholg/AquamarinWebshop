@@ -18,7 +18,7 @@ public class ProductDetailsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String productID = request.getPathInfo().substring(1);
+        int productID = Integer.parseInt(request.getPathInfo().substring(1));
         
         ProductDataHandler pdh = ProductDataHandler.getInstance();
         Product product = pdh.getProduct(productID);
@@ -35,12 +35,13 @@ public class ProductDetailsServlet extends HttpServlet {
             throws ServletException, IOException {
         
         int productID = Integer.parseInt(request.getParameter("productID"));
+        double productPrice = Double.parseDouble(request.getParameter("productPrice"));
         int qty = Integer.parseInt(request.getParameter("productQty"));       
         
         HttpSession session = request.getSession();
         Cart cart = (Cart)session.getAttribute("cart");
         
-        cart.addCartItem(productID, qty);
+        cart.addCartItem(productID, productPrice, qty);
             
         session.setAttribute("cart", cart);
         

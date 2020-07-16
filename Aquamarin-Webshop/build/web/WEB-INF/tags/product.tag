@@ -8,7 +8,7 @@
 <div class="productContainer" data-id="${productID}">
     <div class="ratioHolder"></div>
     <div class="productElement">
-        <img class="productImage" src="img/${image}" alt="${productName}-image">
+        <img class="productImage" src="/Aquamarin-Webshop/static/resources/images/products/${image}" alt="${productName}-image">
 
         <div class="d-flex justify-content-center align-items-center productText">
             <label class="brandLabel">${brand}</label> 

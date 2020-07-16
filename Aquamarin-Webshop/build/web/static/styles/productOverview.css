@@ -1,0 +1,9 @@
+.productContent {
+    display: inline-block;
+    width: 24%;
+}
+
+#contentContainer {
+    max-width: 50%;
+    margin-top: 50px;
+}

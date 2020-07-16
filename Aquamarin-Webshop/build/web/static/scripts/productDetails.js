@@ -42,8 +42,17 @@ $(document).ready(function () {
                success: function(qty)
                {
                    $('#cartItemsNumber').html(qty);
+                   $('#productQty').val(1).change();
+                   $('.addMessage').removeClass('hidden');
+                   setTimeout(function() {
+                       $('.addMessage').addClass('hidden');
+                   }, 10000);
                }      
         });
+    });
+    
+    $(".closeIcon").click(function() {
+        $('.addMessage').addClass('hidden');
     });
     
 });

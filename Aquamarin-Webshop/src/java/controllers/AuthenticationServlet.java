@@ -1,5 +1,7 @@
 package controllers;
 
+import dataHandlers.AuthDataHandler;
+import dataHandlers.AuthenticationLogsDataHandler;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -8,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import models.User;
 
 
 public class AuthenticationServlet extends HttpServlet {
@@ -27,8 +30,8 @@ public class AuthenticationServlet extends HttpServlet {
         
         switch (path) {
             case "/odjava":
-                request.getSession().invalidate();
-                response.sendRedirect("pocetna");
+                request.getSession().removeAttribute("user");
+                response.sendRedirect("/Aquamarin-Webshop/pocetna");
                 break;
             case "/prijava?error":
                 request.setAttribute("loginError", "Neispravno korisničko ime ili lozinka!");                
@@ -45,11 +48,31 @@ public class AuthenticationServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         
-        HttpSession session = request.getSession();
+        AuthDataHandler adh = AuthDataHandler.getInstance();
+        User user = adh.login(username, password);
         
-        if (username.equals("Jacqueline") && password.equals("wuw")) {
-            session.setAttribute("uid", username);
-            response.sendRedirect("pocetna");
+        HttpSession session = request.getSession();
+        session.setAttribute("user", user);
+        
+        String uri = (String) request.getAttribute("javax.servlet.forward.request_uri");
+        if (uri == null) {
+            uri = request.getRequestURL().toString();
+        }
+        
+        System.out.println(uri);
+        
+        if (user != null) {
+            if (user.getRole().equals("user")) {
+                
+                String localIP = request.getRemoteAddr();
+                
+                AuthenticationLogsDataHandler aldh = AuthenticationLogsDataHandler.getInstance();
+                aldh.insertLog(user, localIP);
+                
+                response.sendRedirect("/Aquamarin-Webshop/pocetna");
+            } else if (user.getRole().equals("admin")) {
+                response.sendRedirect("/Aquamarin-Webshop/admin/userLogs");
+            }
         } else {
             response.sendRedirect("prijava?error");
         }

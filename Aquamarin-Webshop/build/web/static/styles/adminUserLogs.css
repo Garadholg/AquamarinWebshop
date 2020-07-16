@@ -1,0 +1,27 @@
+.authTableHead {
+    color: white;
+    background-color: #1659c4;
+}
+
+.table thead>tr>th {
+    border:none;
+}
+
+#contentContainer {
+    max-width: 50%;
+    margin-top: 50px;
+}
+
+#detailsItemsContainer,
+#detailsAddressContainer {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+}
+
+#receiverLabel,
+#streetLabel,
+#cityLabel,
+#countryLabel {
+    margin: 0;
+}

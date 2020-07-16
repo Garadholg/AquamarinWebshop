@@ -5,18 +5,17 @@
         <group>
             <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/static/scripts/productDetails.js</file>
             <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/WEB-INF/sites/productDetails.jsp</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/static/scripts/home.js</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/static/styles/navbar.css</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/WEB-INF/sites/home.jsp</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/src/java/controllers/RegistrationServlet.java</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/src/java/controllers/ProductDetailsServlet.java</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/WEB-INF/sites/adminUserLogs.jsp</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/WEB-INF/components/orderDetails.jsp</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/WEB-INF/sites/cart.jsp</file>
             <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/static/styles/productDetails.css</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/static/styles/home.css</file>
             <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/WEB-INF/components/navbar.jsp</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/static/scripts/purchaseHistory.js</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/src/java/controllers/ImageServlet.java</file>
             <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/WEB-INF/web.xml</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/src/java/models/Cart.java</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/src/java/controllers/HomeServlet.java</file>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/src/java/models/CartItem.java</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/WEB-INF/tags/product.tag</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/src/java/filters/CategoriesFilter.java</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop/web/static/scripts/productOverview.js</file>
         </group>
     </open-files>
 </project-private>

@@ -16,7 +16,7 @@ public class ImageServlet extends HttpServlet {
     private String productImageDir;
     
     public void init() throws ServletException {
-        this.productImageDir = "D:/Faks/Java web/Java web project/resources/images/products";
+        this.productImageDir = "/Aquamarin-Webshop/static/resources/images/products";
     }
 
     @Override

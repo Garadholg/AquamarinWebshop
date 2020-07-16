@@ -27,6 +27,10 @@ public class Product {
     @JoinColumn(name = "BrandID", nullable = false)
     private Brand brand;
     
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "CategoryID", nullable = false)
+    private ProductCategory category;
+    
     @Column(name = "ProductName")
     private String productName;
     
@@ -59,6 +63,10 @@ public class Product {
 
     public Brand getBrand() {
         return brand;
+    }
+
+    public ProductCategory getCategory() {
+        return category;
     }
     
     public String getProductName() {

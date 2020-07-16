@@ -3,7 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop-DAL/src/models/Product.java</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop-DAL/src/dataHandlers/AuthDataHandler.java</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop-DAL/src/META-INF/persistence.xml</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop-DAL/src/dataHandlers/OrderDataHandler.java</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop-DAL/src/dataHandlers/ProductDataHandler.java</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop-DAL/src/dataHandlers/AuthenticationLogsDataHandler.java</file>
+            <file>file:/D:/Faks/Java%20web/Java%20web%20project/Aquamarin-Webshop-DAL/src/dataHandlers/ProductCategoryDataHandler.java</file>
         </group>
     </open-files>
 </project-private>
